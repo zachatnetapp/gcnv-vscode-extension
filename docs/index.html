@@ -86,9 +86,26 @@
             margin: 20px 0;
             border-radius: 4px;
         }
+        .header-nav {
+            text-align: right;
+            margin-bottom: 20px;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .header-nav a {
+            margin-left: 20px;
+            font-weight: 500;
+        }
     </style>
 </head>
 <body>
+    <!-- Header navigation with privacy policy link -->
+    <div class="header-nav">
+        <a href="https://marketplace.visualstudio.com/items?itemName=NetApp.gcnv-vscode-extension">Marketplace</a>
+        <a href="https://github.com/NetApp/gcnv-vscode-extension">GitHub</a>
+        <a href="privacy.html"><strong>Privacy Policy</strong></a>
+    </div>
+
     <h1>Google Cloud NetApp Volumes VS Code Extension</h1>
     
     <p class="tagline">AI-Powered Storage Management for Developers</p>
@@ -158,34 +175,39 @@
         <li>Click <strong>Install</strong></li>
     </ol>
     
-    <h2 id="privacy-policy">Security & Privacy</h2>
+    <h2 id="privacy">Privacy Policy</h2>
     
     <div class="privacy-link">
-        <p><strong>📄 <a href="privacy.html">Read our complete Privacy Policy</a></strong></p>
-        <p style="margin: 5px 0 0 0; font-size: 0.95em;">Learn about how we collect, use, and protect your information.</p>
+        <p><strong>📄 <a href="privacy.html" rel="nofollow">View our complete Privacy Policy</a></strong></p>
+        <p style="margin: 5px 0 0 0; font-size: 0.95em;">Learn about how we collect, use, and protect your information when using the NetApp GCNV VS Code Extension.</p>
     </div>
+    
+    <h3>Quick Summary</h3>
     
     <p>This extension requires access to your Google Cloud account to manage Google Cloud NetApp Volumes resources.</p>
     
-    <h3>Information We Access</h3>
+    <h4>Information We Access</h4>
     <ul>
         <li><strong>Google Account Email</strong> - to identify the authenticated user</li>
         <li><strong>Google Cloud Projects</strong> - to list and display your GCNV resources</li>
         <li><strong>GCNV Resources</strong> - to display and manage your volumes, pools, and snapshots</li>
     </ul>
     
-    <h3>Data Storage</h3>
+    <h4>Data Storage</h4>
     <p>All authentication tokens are stored securely in VS Code's secret storage on your local machine. We do not transmit or store your data on external servers.</p>
     
-    <h3>Third-Party Services</h3>
+    <h4>Third-Party Services</h4>
     <p>This extension communicates directly with Google Cloud APIs. No data is sent to NetApp servers.</p>
     
-    <p>For complete details, please review our <a href="privacy.html">Privacy Policy</a>.</p>
+    <p><strong>→ <a href="privacy.html">Read the full Privacy Policy</a></strong></p>
     
     <hr>
     
     <p style="text-align: center; color: #666; font-size: 0.9em; margin-top: 40px;">
-        © 2025 NetApp, Inc. All rights reserved. | <a href="privacy.html">Privacy Policy</a>
+        © 2025 NetApp, Inc. All rights reserved.<br>
+        <a href="privacy.html">Privacy Policy</a> | 
+        <a href="https://www.netapp.com/company/legal/terms-of-use/">Terms of Use</a> | 
+        <a href="https://github.com/NetApp/gcnv-vscode-extension">GitHub</a>
     </p>
 </body>
 </html>
