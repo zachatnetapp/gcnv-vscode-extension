@@ -1,2 +1,63 @@
-# gcnv-vscode-extension.github.io
-The landing page for the gcnv vscode extension
+# Google Cloud NetApp Volumes VS Code Extension
+
+**AI-Powered Storage Management for Developers**
+
+A VS Code extension that brings Google Cloud NetApp Volumes (GCNV) storage management directly into your development environment. Manage storage resources, generate templates, and get AI-powered recommendations without leaving VS Code.
+
+[![VS Code Marketplace](https://img.shields.io/badge/VS%20Code-Marketplace-blue)](https://marketplace.visualstudio.com/items?itemName=NetApp.gcnv-vscode-extension)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/NetApp/gcnv-vscode-ext/blob/main/LICENSE)
+[![Version](https://img.shields.io/badge/Version-1.0.0-orange)](https://marketplace.visualstudio.com/items?itemName=netapp.google-cloud-netapp-volumes)
+
+---
+
+**The Solution:** AI-powered storage management integrated directly into VS Code with natural language commands and intelligent recommendations.
+
+## ✨ Key Features
+
+### AI-Powered Chat Integration
+- **@gcnv Chat Participant**: Natural language storage management through GitHub Copilot
+- **Intelligent Recommendations**: AI-powered analysis and optimization suggestions
+- **Context-Aware Assistance**: Framework-specific code generation and best practices
+
+### Core Functionality
+- **Resource Management**: Browse and manage GCNV projects, capacity pools, and volumes
+- **Template Generation**: Create Terraform templates with AI assistance
+- **One-Click Operations**: Generate mount scripts, and deploy templates
+- **Real-Time Analysis**: Performance metrics and cost optimization insights
+
+### Developer/Devops Experience
+- **Zero Context Switching**: Everything happens in VS Code
+- **Natural Language Commands**: "analyze this volume", "generate Terraform template", "Generate mount script"
+
+## Prerequisites
+
+- **VS Code**: Version 1.77.0 or higher
+- **Google Cloud Account**: With access to GCNV
+- **API Enablement and IAM Permissions**: Google API, Google compute API and Cloud Resource Manager API enabled under “APIs & Services”. Under “IAM & Admin / IAM” in Google Cloud, your email has “Owner” and “Service Usage Admin” roles
+- **GitHub Copilot**: For AI-powered chat features (optional but recommended)
+
+## Installation
+
+### From VS Code Marketplace
+
+1. Open VS Code
+2. Go to Extensions (`Ctrl+Shift+X` / `Cmd+Shift+X`)
+3. Search for "Google Cloud NetApp Volumes"
+4. Click **Install**
+
+## Security Disclosures
+
+This extension requires access to your Google Cloud account to manage Google Cloud NetApp Volumes resources.
+
+**Information We Access:**
+- Google Account Email - to identify the authenticated user
+- Google Cloud Projects - to list and display your GCNV resources  
+- GCNV Resources - to display and manage your volumes, pools, and snapshots
+
+**Data Storage:**
+All authentication tokens are stored securely in VS Code's secret storage on your local machine. We do not transmit or store your data on external servers.
+
+**Third-Party Services:**
+This extension communicates directly with Google Cloud APIs. No data is sent to NetApp servers.
+
+For more information, see [Google Cloud Privacy Policy](https://cloud.google.com/terms/cloud-privacy-notice).
